@@ -1,5 +1,4 @@
 name: scheduler
-
 on:
   workflow_dispatch:
   schedule:
