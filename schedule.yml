@@ -1,0 +1,12 @@
+name: scheduler
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: " */1 * * * * "
+job: 
+  demo:
+    runs-on: ubuntu-latest
+    steps: 
+      -name: log
+       run: echo " run as per schedule " 
