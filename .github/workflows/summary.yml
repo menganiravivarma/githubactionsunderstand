@@ -1,0 +1,10 @@
+name: summary
+on: 
+  workflow_dispatch
+
+jobs: 
+  sum:
+    runs-on: ubuntu-latest
+    steps:
+      -name: 'summary-view'
+       run: echo "print summary to understand the logs" >> $GITHUB_STEP_SUMMARY
